@@ -12,6 +12,9 @@ body {
   min-width: 960px;
   -webkit-text-size-adjust: 100%; }
 
+code {
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+
 #container:after {
   content: "";
   display: block;
@@ -23,10 +26,9 @@ body {
   margin: 0 auto;
   width: 960px;
   background-color: #ccc;
-  float: right;
   height: 1500px;
   padding: 20px; }
 
 #pagetop {
   margin: 20px 0;
-  text-align: rigfht; }
+  text-align: right; }

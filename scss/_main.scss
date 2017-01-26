@@ -15,6 +15,10 @@ body{
     -webkit-text-size-adjust: 100%; //iPhone 文字サイズバク対策
 }
 
+code {
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
 
 #container {
     @include cf;
@@ -23,12 +27,11 @@ body{
 #content {
     @include contentwidth;
     background-color: $gray;
-    float: right;
     height: 1500px;
     padding: 20px;
 }
 
 #pagetop {
     margin: 20px 0;
-    text-align: rigfht
+    text-align: right;
 }
