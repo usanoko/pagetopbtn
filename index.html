@@ -11,24 +11,19 @@
 	<div id="container">
 	    <div id="content">
 		<p>ページトップへ戻るボタンサンプルだよ。<br>
-		下へスクロールしてね！</p>
+		    下へスクロールするとボタンがあるよ！</p>
 		<pre>
 		<code>
-			    $(function () {
-				var $nav = $("#sidemenu");
-				$(".JS-navHoverBox").on({
-				    "mouseenter": function () {
-					$nav.stop().animate({"left": 0}, 150);
-				    },
-				    "mouseleave": function () {
-					$nav.stop().animate({"left": -280}, 150);
-				    }
-				});
-			    });
+$(function () {
+    $("#btn_top").click(function () {
+    $('html,body').animate({scrollTop: 0}, 'slow', 'swing');
+	return false;
+    });
+});
 		</code>
 		</pre>
 	    </div>
-	    
+
 	    <div id="pagetop"><a id="btn_top" href=""><img src="img/btn_pagetop.png" alt="ページトップへ戻る"></a></div>
 	</div>
 
