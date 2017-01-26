@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>うさのこメモ｜ページトップへ戻るボタン</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+	<div id="container">
+	    <div id="content">
+		<p>ページトップへ戻るボタンサンプルだよ。</p>
+		<pre>
+		<code>
+			    $(function () {
+				var $nav = $("#sidemenu");
+				$(".JS-navHoverBox").on({
+				    "mouseenter": function () {
+					$nav.stop().animate({"left": 0}, 150);
+				    },
+				    "mouseleave": function () {
+					$nav.stop().animate({"left": -280}, 150);
+				    }
+				});
+			    });
+		</code>
+		</pre>
+	    </div>
+	    
+	    <div id="pagetop"><a id="btn_top" href=""><img src="img/btn_pagetop.png" alt="ページトップへ戻る"></a></div>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script>
+	    $(function () {
+		$("#btn_top").click(function () {
+		    $('html,body').animate({scrollTop: 0}, 'slow', 'swing');
+		    return false;
+		});
+	    });
+	</script>
+    </body>
+</html>
