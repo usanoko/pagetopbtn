@@ -32,6 +32,13 @@ $(function () {
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script>
+	    $(function () {
+		$("#btn_top").click(function () {
+		    $('html,body').animate({scrollTop: 0}, 'slow', 'swing');
+		    return false;
+		});
+	    });
+	    
 	    SyntaxHighlighter.autoloader
 	    (
 	    "js jscript javascript  ../scripts/shBrushJScript.js",
@@ -39,12 +46,6 @@ $(function () {
 	    );
 	    SyntaxHighlighter.all();
 
-	    $(function () {
-		$("#btn_top").click(function () {
-		    $('html,body').animate({scrollTop: 0}, 'slow', 'swing');
-		    return false;
-		});
-	    });
 	</script>
     </body>
 </html>
