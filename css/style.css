@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.7;
   color: #000;
   background-color: #fff;
@@ -28,6 +28,11 @@ code {
   background-color: #ccc;
   height: 1500px;
   padding: 20px; }
+
+.syntaxhighlighter {
+  font-size: 90%; }
+  .syntaxhighlighter .number {
+    padding: 0 10px; }
 
 #pagetop {
   margin: 20px 0;
