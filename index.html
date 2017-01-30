@@ -6,13 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<link rel="stylesheet" href="css/shCoreEclipse.css">
+	<script>SyntaxHighlighter.all();</script>
     </head>
     <body>
 	<div id="container">
 	    <div id="content">
 		<p>ページトップへ戻るボタンサンプルだよ。<br>
 		    下へスクロールするとボタンがあるよ！</p>
-		<pre>
+		<pre class="brush:js">
 		<code>
 $(function () {
     $("#btn_top").click(function () {
@@ -21,6 +26,7 @@ $(function () {
     });
 });
 		</code>
+
 		</pre>
 	    </div>
 
@@ -29,6 +35,13 @@ $(function () {
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script>
+	    SyntaxHighlighter.autoloader
+	    (
+	    "js jscript javascript  ../scripts/shBrushJScript.js",
+	    "xml xhtml xslt html    h../scripts/shBrushXml.js"
+	    );
+	    SyntaxHighlighter.all();
+
 	    $(function () {
 		$("#btn_top").click(function () {
 		    $('html,body').animate({scrollTop: 0}, 'slow', 'swing');
