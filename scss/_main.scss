@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/*=============================================
+base
+=============================================*/
 html {
     overflow: auto;
 }
@@ -18,24 +21,50 @@ body{
 code {
     font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
-
-
-#container {
-    @include cf;
-}
-
-#content {
-    @include contentwidth;
-    background-color: $gray;
-    height: 1500px;
-    padding: 20px;
-}
-
 .syntaxhighlighter {
     font-size: 90%;
 }
 
-#pagetop {
-    margin: 20px 0;
+
+/* contents
+--------------------------------------*/
+#container {
+    @include cf;
+    background: url("../img/bg.png") repeat left top #fff;
+}
+
+#content {
+    @include contentwidth;
+    background-color:  #fff;
+    height: 1500px;
+}
+
+section {
+    + * {
+	margin-top: 40px;
+    }
+}
+
+#btnmenu {
     text-align: right;
 }
+
+
+/* footer
+--------------------------------------*/
+#pagetop {
+    text-align: right;
+}
+
+footer {
+    background-color: #272727;
+    color: #fff;
+    font-size: 90%;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+/*=============================================
+contents
+=============================================*/

@@ -13,5 +13,6 @@
 
 @mixin contentwidth {
     margin: 0 auto;
-    width: 960px;
+    padding: 20px;
+    width: 960px - 40; //padding分マイナス
 }
